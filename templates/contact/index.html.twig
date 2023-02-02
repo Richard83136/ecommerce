@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter - Broc Vintage Style{% endblock %}
+
+{% block body %}
+<div class="page-contact">    
+    <h2>Nous contacter</h2>
+
+        <p>N'hésitez pas à prendre contact avec notre équipe nous vous répondrons dans les meilleurs délais </p>
+    
+    {% for message in app.flashes('notice') %}  
+        <div class="alert alert-info">{{ message }}</div>      
+    {% endfor %}
+
+    <div class="row">
+        <div class="col-md-8">{{ form(form) }}</div>
+        <div class=" droit col-md-4 ">
+            <strong>Broc Vintage Style</strong>
+            <hr>
+            07 20 30 40 50  <br>
+            ch des blaques 83136 Rocbaron <br>
+            contact@brocvintagestyle.fr
+
+        </div>
+    </div>
+</div>
+{% endblock %}

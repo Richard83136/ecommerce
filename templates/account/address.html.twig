@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes adresses - Broc Vintage Style{% endblock %}
+
+{% block body %}
+<div class="mes-adresses">
+<button><a href="{{ path('address_add') }}" >Ajouter une adresse</a></button>
+<h1>Mes adresses</h1>
+
+<p> C'est dans cet espace que vous allez pouvoir gérer toutes vos adresses. <br></p>
+
+<a href="{{ path('account') }}">Retour</a>
+<hr>
+
+   {% if app.user.addresses|length == 0 %}
+   <p class="text-center">
+      Vous n'avez pas encore ajouté d'adresse dans votre compte client. Pour en ajouter une, veuillez <button><a href="{{ path('address_add') }}">Cliquer ici </a></p> 
+      {% else %}
+      <div class="row">
+         {% for address in app.user.addresses %}
+            <div class="col-md-4">
+               <div class="card" style="width: 18rem;">
+               <div class="card-body">
+                  <h5 class="card-title">{{ address.name }}</h5>
+                  <p class="card-text">
+                  {{ address.address }},<br>
+                  {{ address.postal }} - {{ address.city }} - {{ address.country }}
+                  </p>
+                  <button><a href="{{ path('address_edit', { 'id' : address.id}) }}">Modifier</a></button> | <button> <a href="{{ path('address_delete', { 'id' : address.id }) }}">Supprimer</a></button>
+               </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   {% endif %}
+</div>
+{% endblock %}

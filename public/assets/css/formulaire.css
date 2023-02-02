@@ -1,0 +1,138 @@
+/*------------------inscription--------------*/
+.inscription{
+  background-image:linear-gradient(rgba(255, 255, 255, 0.71),rgba(255, 255, 255, 0.769)), url('../images/inscription_fd.png');
+  width:100%;
+  height:850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:-10px;
+ 
+} 
+ 
+.container-fluid{
+  background-image:linear-gradient(rgba(255, 255, 255, 0.459),rgba(255, 255, 255, 0.582)), url('../images/nav_craquelee.png');
+  margin-top:-10px;
+  margin-bottom:-10px;
+}
+.container-fluid>p{
+  animation:defilement 2s;
+}
+@keyframes defilement{
+  from{
+    margin-left:-800px;
+  }
+}
+.nav-item>a{
+  font-weight:900;
+}
+.btn-group>button{
+  font-weight:900;
+}
+.nav-item .icon-panier img{
+  margin-top:-15px !important;
+  
+  filter:brightness(80%);
+  
+}
+
+  .formulaire>h1{
+    color: white;
+    padding-bottom:10%;
+    padding-top:5%;
+    text-align: center;
+
+  }
+  .formulaire{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+  }
+  /*---------------formulaire login---*/
+  .connection{
+    background-image:linear-gradient(rgba(133, 127, 127, 0.486),rgba(255, 255, 255, 0.35)), url('../images/connexion_fd.jpg');
+  width:100%;
+  height:850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:-10px;
+  }
+  .formulaire_login{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+  }
+  .formulaire_login>h1{
+    color: white;
+    padding-bottom:10%;
+    padding-top:5%;
+    text-align: center;
+
+  }
+
+/*--------------------modification mot de passe ---------*/
+.modificationmdp{
+  background-image:linear-gradient(rgba(133, 127, 127, 0.486),rgba(255, 255, 255, 0.35)), url('../images/connexion_fd.jpg');
+  width:100%;
+  height:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:-10px;
+}
+.modif_mdp{
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  color:white;
+}
+.modif_mdp>h1{
+ padding-top:5%; 
+ text-align: center;
+  color:white;
+}
+.modif_mdp button{
+  background-color:rgb(67, 67, 77);
+  border-radius: 10px;
+  border: 1px solid white;
+  display: block;
+  margin:auto;
+  
+  
+}
+.modif_mdp a{
+  color:white;
+  text-decoration: none;
+  
+  
+}
+/*------------------compte---------*/
+
+
+/*-----------------------footer-----------------*/
+.footer{
+    color: black;
+    
+    position: absolute;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.459),rgba(255, 255, 255, 0.582)), url('../images/nav_craquelee.png');
+    width:100%;
+    height:60px;
+    text-align: center;
+    padding-top: 1%;
+  }
+  .footer>span{
+    font-family: 'Fredericka the Great',cursive;
+    font-weight: 900;
+  }
+  .footer>a{
+    font-weight: 900;
+    color:black;
+    
+  }
+  .footer>a:hover{
+    color: rgb(87, 87, 95);
+    font-style: italic;
+  }

@@ -1,0 +1,478 @@
+body{
+  width:100%;
+
+}
+
+.container-fluid{
+  background-image:linear-gradient(rgba(255, 255, 255, 0.459),rgba(255, 255, 255, 0.582)), url('../images/nav_craquelee.png');
+  margin-top:-10px;
+  margin-bottom:-10px;
+}
+.container-fluid>p{
+  animation:defilement 2s;
+}
+@keyframes defilement{
+  from{
+    margin-left:-800px;
+  }
+}
+.nav-item>a{
+  font-weight:900;
+}
+.btn-group>button{
+  font-weight:900;
+}
+.nav-item .icon-panier img{
+  margin-top:-15px !important;
+  
+  filter:brightness(80%);
+  
+}
+/*-------------------accueil------------*/
+.parallax-accueil{
+  padding-top:0px;
+  background-image: url('../images/accueil_fond_ecran.jpg');
+  width:100%;
+  height:723px;
+  background-attachment: fixed;
+}
+.parallax{
+    height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titre{
+  color:rgb(90, 70, 70);
+  font-size: 50px;
+  padding-left: 20%;
+  padding-top:50px;
+}
+.parallaxpageproduit{
+  height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn:hover{
+  background-color: rgb(154, 161, 168);
+}
+
+/*---titre accueil---*/
+#titre_defile>p{
+  color:white;
+  animation:defile 8s ;
+  font-size:30px;
+  text-align: center;
+  padding-top: 2%;
+}
+@keyframes defile{
+  0%{
+    margin-left:-1000px;
+  }
+  50%{
+    margin-left:500px;
+    color:rgb(194, 117, 117);
+  }
+  80%{opacity:1;}
+  85%{opacity:0;}
+
+  100%{opacity:1;color:white;}
+}
+/*------------------------boutique-----------------*/
+.parallax-boutique{
+  padding-top:0px;
+  background-image:linear-gradient(rgba(204, 116, 116, 0.548),rgba(173, 104, 104, 0.623)), url('../images/boutique_fd.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  width:100%;
+  height:auto;
+  color:white;
+  text-align: center;
+  padding-top:1%;
+  font-family: 'Fredericka the Great',cursive;
+}
+
+/*-------------------------Compte-------------------*/
+.compte{
+  padding-top:0px;
+  background-image:linear-gradient(rgba(209, 172, 172, 0.603),rgba(202, 189, 189, 0.5)), url('../images/compte_fd.jpg');
+  width:100%;
+  height:723px;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top:1%;
+  font-family: 'Fredericka the Great',cursive;
+}
+.compte>h1{
+  text-align: center;
+  color: black;
+  font-weight:900;
+}
+.compte>p{
+  text-align: center;
+  color: black;
+  font-weight: 900;
+}
+
+.compte span{
+  text-transform: capitalize ;
+  font-size:1.3em;
+  animation:clignote 2s
+}
+@keyframes clignote{
+  0%{
+    opacity:1;
+  }
+  50%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+#selection{
+  color:black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+}
+#selection a{
+  color:black;
+}
+
+.account-item{
+ margin-left: auto;
+ margin-right: auto;
+}
+.account-item a{
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #4b6584;
+  font-weight: bold;
+}
+/*-------------------Mes adresses---------*/
+.mes-adresses{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+.mes-adresses button{
+  margin-top: 1%;
+  text-decoration: none;
+  background-color: #4b6584;
+  border-radius: 10px;
+
+}
+.mes-adresses a{
+  text-decoration: none;
+  color:white;
+
+}
+.mes-adresses h1{
+  text-align: center;
+}
+
+/*------------------gérer mes adresses--------*/
+
+.gerer-mes-adresses{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+.gerer-mes-adresses button{
+  background-color: #4b6584;
+  
+}
+.gerer-mes-adresses a{
+  color: white;
+
+}
+
+.gerer-mes-adresses h1{
+  text-align: center;
+}
+
+/*----------------mes commandes sur mon compte user---*/
+.mes-commandes-compte{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+.mes-commandes-compte h1{
+ text-align: center;
+ padding-top: 2%;
+  padding-bottom: 2%;
+}
+.mes-commandes-compte p{
+  text-align: center;
+  padding-top: 1%;
+   padding-bottom: 1%;
+ }
+
+ /*------------voir ma commande----------*/
+ .voir-ma-commande{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color:rgb(187, 202, 210);
+ }
+ .voir-ma-commande h2{
+  text-align: center;
+ }
+ .voir-ma-commande .text-right{
+  text-align: end;
+  padding-right: 1%;
+ }
+ #total-commande-show{
+  background-color: aqua;
+ }
+ .text-right>hr{
+  width:15%;
+  margin-left:85%;
+ }
+
+
+
+
+/*--------------------------page Art de la table------------*/
+.parallax-art-table{
+  padding-top:0px;
+  background-image:linear-gradient(rgba(204, 116, 116, 0.603),rgba(173, 104, 104, 0.5)), url('../images/art_table_fond_ecran.jpg');
+  width:100%;
+  height:750px;
+  background-attachment: fixed;
+  color:white;
+  text-align: center;
+  padding-top:1%;
+  font-family: 'Fredericka the Great',cursive;
+}
+
+/*----------------------nos-produits-----------------*/
+
+.nos-produits{
+  position: relative;
+}
+.nos-produits h1{
+  text-align: center;
+  padding-top:2%;
+}
+.product-item h5{
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+.product-item{
+  margin-top: 50px;
+}
+.product-item img{
+  width:75%;
+}
+.product-item .product-subtitle{
+  font-size:14px;
+  display:block;
+  margin-bottom: 10px;
+}
+.product-item .product-price{
+  font-size: 15px;
+  font-weight: bold;
+}
+.product-container{
+  margin-bottom: 20%;
+  margin: 5%;
+  }
+.product-page-price{
+  font-size: 20px;
+  padding-bottom: 10%;
+}
+/*--------------------show produit------*/
+.detail-produit{
+  width:75%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------------------------mon-panier-------------------*/
+.mon_panier{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgba(223, 229, 235, 0.686); 
+}
+.mon_panier h1{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#total-panier{
+  text-align: center;
+}
+#panier-vide{
+  margin-bottom:5%;
+}
+#bas-vide{
+  padding-bottom: 10%;
+}
+/*-----------------je passe ma commande------*/
+.passe-commande{
+  width:75%;
+  margin-left: 10%;
+  padding-bottom: 5%; 
+  background-color: rgba(223, 229, 235, 0.686); 
+}
+.passe-commande h2{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.passe-commande>p {
+text-align: center;
+font-weight: 900;
+}
+
+/*----------------commande recapitulatif-------*/
+.commande-recap{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+  background-color: aliceblue;
+}
+.adresse-livraison{
+  margin-left: 2%;
+}
+.commande-recap h2{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.commande-recap>p{
+  text-align: center;
+  font-weight: 900;
+}
+.sous-total-recap{
+  text-align: end;
+  text-decoration: underline;
+  margin-right:3%;
+}
+#color-total{
+  color:blueviolet;
+}
+.btn-recap{
+  
+  margin-left: 50%;
+  
+}
+/*----------------------page recapitulatif commande---------*/
+/* .page-recap-commande{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10%;
+}
+.page-recap-commande h2 {
+  text-align: center;
+  margin-top: 2%;
+}
+.page-recap-commande p {
+  margin-top: 2%;
+}
+#sous-total{
+  text-align:end;
+  
+}  */
+
+/*-------------------confirmation commande--------*/
+.confirmation-commande{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/*---------------------------contact----------------*/
+.page-contact{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-contact h2 {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.page-contact>p {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.page-contact .droit{
+  text-align: center;
+}
+
+
+
+
+
+
+/*-----------------------footer-----------------*/
+.footer{
+  color: black;
+  
+  position: absolute;
+  background-image:linear-gradient(rgba(255, 255, 255, 0.651),rgba(255, 255, 255, 0.582)), url('../images/nav_craquelee.png');
+  width:100%;
+  height:auto;
+  text-align: center;
+  padding-top: 1%;
+  margin-top:-10px;
+  
+}
+.footer .row span{
+  font-family: 'Fredericka the Great',cursive;
+  font-weight: 900;
+}
+.footer .row a{
+  font-weight: 900;
+  color:black;
+  
+
+}
+.footer .row a:hover{
+  color: rgb(87, 87, 95);
+  font-style: italic;
+}
+.footer>.row{
+  width:100%;
+  
+}
+.footer .icon a{
+  color:black;
+  font-weight:normal ;
+  font-style:normal ;
+  
+}
+.footer .icon a:hover{
+  color:black;
+  font-weight:normal ;
+  font-style:normal ;
+  
+}
+
+
+

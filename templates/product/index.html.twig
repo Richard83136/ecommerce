@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos produits Broc Vintage Style{% endblock %}
+
+
+{% block body %}
+<div class="parallax-boutique">
+    <h1>Boutique</h1>
+
+    <div class="row">
+        <div class="col-md-3 mx-auto mt-5  ">
+            
+            {{form(filterform)}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 " style="padding-bottom:10%;">
+            <div class="nos-produits">
+                
+                <div class="row product-container">
+            
+                    {% for product in products %}
+                        <div class="col-md-3">
+                            <div class="product-item text-center">
+                                <a href="{{path('product', {'slug': product.slug } ) }}"><img src="/uploads/{{product.illustration}}" alt="{{product.name}}" class="img-fluid"></a>
+                                <h5>{{product.name}}</h5>
+                                <span class="product-subtitle">{{product.subtitle}}</span>
+                                <span class="product-price">{{(product.price/100)|number_format(2,',','.') }}</span>
+                            </div>
+                        </div>            
+                    {% endfor %}    
+                </div></div>
+        </div></div>
+    
+</div>
+
+{% endblock %}
+
+

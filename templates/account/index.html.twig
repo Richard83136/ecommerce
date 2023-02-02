@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte - Broc Vintage Style{% endblock %}
+
+{% block body %}
+    <div class="compte">
+        <h1>Mon compte</h1>
+            <p>Bienvenue <span>{{ app.user.firstname }}</span>   dans votre compte.</p>  <br>
+            <p>C'est dans cet espace que vous allez pouvoir gérer toutes vos informations personnelles <br></p>
+            <hr>
+    <div id="selection">
+ {% if is_granted('ROLE_ADMIN') %}
+ <small> -Vous êtes un administrateur ? <a href="/admin" style="background-color:aliceblue; color: rgb(134, 103, 103) !important;" target="_blank"> accédez à la gestion de base de donnée </a></small><br><br>
+     
+ {% endif %}
+        
+            <img src="{{ asset('assets/images/password.png') }}" alt="modifier mon mot de passe"><br>
+            - <a href="{{path('account_password')}}">Modifier mon mot de passe</a><br><br>
+            
+            <img src="{{ asset('assets/images/navigation.png') }}" alt="modifier mes adresses"><br>
+           - <a href="{{ path('address') }}">Gérer mes adresses</a><br><br>
+            
+           <img src="{{ asset('assets/images/purchase.png') }}" alt="mes commandes"><br>
+           - <a href="{{ path('account_order') }}">Mes commandes</a><br><br>
+            </div>
+       </div> 
+    
+{% endblock %}
